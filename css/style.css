@@ -1,0 +1,118 @@
+html, body {
+  height: 100%;
+}
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+  }
+
+.full-height{
+  height: 100%;
+}
+.first-section{
+  background: rgb(245,245,245) url("../ressources/images/resume_derick_nana.png") center no-repeat fixed;
+  background-size: cover;
+}
+  .full-height .container-fluid, .row-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .full-height .container-fluid{
+    height: 100%; width: 100%;
+  }
+  .full-height p{
+    width: 50%; text-align: center; margin-left: 25%;
+    font-size: 18px;
+  }
+
+.section-simple{
+  background-color: white;
+}
+  .section-info p{
+    width: 80%; text-align: justify; margin-left: 0;
+    font-size: 24px;
+  }
+  .section-simple li{
+    width: 80%; 
+  }
+  .section-info img{
+    width: 80%;
+  }
+  .section-info .btn-group{
+    float: right; margin-right: 20%;
+  }
+  .section-color .btn-group{
+    float: right; margin-right: 0%;
+  }
+  .section-info .btn-group .btn-primary{
+    background-color: rgb(255, 72, 0);
+    border: 1px rgb(255, 72, 0);
+  }
+  .section-color .col-data{
+    padding-left: 10%;
+  }
+  .section-color p{
+    width: 100%;
+  }
+/*Section pour les projets*/
+.section-projet .div-projet{
+  position: relative;
+}
+  .div-projet .link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+
+/* Add a gray background color and some padding to the footer */
+footer {
+  background-color: #17181a;;
+  padding: 25px; color: white;
+}
+  footer .text-small {
+    font-size: 0.9rem;
+  }
+
+  footer a {
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  footer a:hover, a:focus {
+    text-decoration: none;
+  }
+
+/*Media Query-----------------------------------*/
+@media only screen and (max-width: 600px) {
+  .first-section .row-content{
+    background: rgba(250,250,250,.8);
+  }
+  .row-content{
+    display: block!important; 
+  }
+  .mask-on-mobile{
+    display: none;
+  }
+  .section-info p{
+    font-size: 18px; width: 100%;
+  }
+  .section-info .btn-group{
+    float: right; margin-right: 0;
+  }
+  .section-color .col-resume{
+    padding-left: 2%;
+  }
+  .section-info li{
+    width: 100%; 
+  }
+}
