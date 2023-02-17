@@ -14,7 +14,7 @@ html, body {
   height: 100%;
 }
 .first-section{
-  background: rgb(245,245,245) url("../ressources/images/resume_derick_nana.png") center no-repeat fixed;
+  background: rgb(245,245,245) url("../ressources/images/resume_derick_nana_react.png") center no-repeat fixed;
   background-size: cover;
 }
   .full-height .container-fluid, .row-content{
